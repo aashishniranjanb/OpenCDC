@@ -72,10 +72,10 @@ cd ..
 3. Verify parsing works:
 
 ```bash
-python opencdc/parser.py examples/counter_netlist.json
+python -m opencdc examples/counter_netlist.json
 ```
 
-If you see "Found N flip-flops", the pipeline is working and you can start building checks.
+If you see an output table (or a green "No cross-domain nets detected" message), the pipeline is working and you can start building checks.
 
 ## 6. Roadmap (what comes next)
 

@@ -1,3 +1,4 @@
 pyverilog
 networkx
 graphviz
+rich
