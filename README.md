@@ -50,13 +50,18 @@ The initial prototype focuses on a common CDC error pattern: a register from a f
 
 ## 5. Getting started (what to run today)
 
-1. Install dependencies:
+### Prerequisites
+
+- **Python 3.8+** (or equivalent). 
+- **Yosys** (used to generate the JSON netlist). If you do not have Yosys installed yet, you can still verify the parser using the provided `examples/counter_netlist.json` file.
+
+1. Install Python dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-2. Generate a Yosys netlist for the example design:
+2. Generate a Yosys netlist for the example design (if Yosys is available):
 
 ```bash
 cd examples

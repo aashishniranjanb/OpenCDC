@@ -1,0 +1,24 @@
+{
+  "modules": {
+    "top": {
+      "cells": {
+        "ff_fast": {
+          "type": "$dff",
+          "connections": {
+            "D": ["count_fast_next"],
+            "Q": ["count_fast"],
+            "CLK": ["clk_fast"]
+          }
+        },
+        "ff_slow": {
+          "type": "$dff",
+          "connections": {
+            "D": ["count_fast"],
+            "Q": ["count_slow"],
+            "CLK": ["clk_slow"]
+          }
+        }
+      }
+    }
+  }
+}
